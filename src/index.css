@@ -1,13 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Pacifico&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #76c89360;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  font-family: Pacifico;
+  font-size: 20px;
+  color: #3a8872;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0 0 10px #3a887240;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  padding: 5px 15px;
+  height: 20px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  transition: all ease-in-out 100ms;
+}
+
+input:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 5px 1px #52b69a;
+  border: none;
+  border: 7px;
+}
+
+.emoji-list {
+  background-color: #52b69a70;
+  width: 300px;
+  height: 575px;
+  margin: 30px 0 0 0;
+  padding: 10px;
+  border-radius: 20px 7px 20px 7px;
+  box-shadow: 0 0 15px 5px #52b69a80;
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* gap: 20px; */
+  align-content: flex-start;
+  justify-content: center;
+}
+
+.emoji-list::-webkit-scrollbar {
+  display: none;
+}
+
+.emoji {
+  font-size: 50px;
+  margin: 3px;
+  padding: 5px;
+  border: 3px solid #45a388;
+  border-radius: 10px;
+  box-shadow: 0 0 1px 2px #52b69a80;
+  height: 55px;
+  width: 55px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 100ms;
+  color: #3a8872;
+  user-select: none;
+}
+
+.emoji:hover {
+  border: 3px solid #3a8872;
+  box-shadow: 0 0 2px #3a887270;
 }
